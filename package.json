@@ -1,0 +1,27 @@
+{
+  "name": "apod",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd Server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm ci && cd ../client && npm ci",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristian821/APOD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kristian821/APOD/issues"
+  },
+  "homepage": "https://github.com/kristian821/APOD#readme",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
